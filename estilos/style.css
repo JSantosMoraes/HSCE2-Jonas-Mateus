@@ -17,6 +17,7 @@ header {
     background-color: #fff;
     color: #303B7C;
     gap: 30px;
+    
 }
 
 header img {
@@ -39,7 +40,7 @@ header img {
     max-height: 100vh;
     background-color: #303B7C;
     color: #fff;
-    left: 40%;
+    margin-left: 40%;
     height: 100%;
     width: 50%;
 
@@ -81,7 +82,7 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     gap: 30px;
 }
 
@@ -122,3 +123,52 @@ form a{
 
 
 
+@media (max-width:900px) {
+
+    .login{
+        width: 60%;
+        margin-left: 20%;
+        height: 80%;
+        top: calc(10% + 100px);
+        border-radius: 20px;
+    }
+
+    form{
+        width: 90%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .logo{
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .logo h1{
+        font-size: 35px;
+    }
+    .logo div{
+        display: none;
+    }
+
+    .logo img{
+        width: 150%;
+        height: 105%;
+        object-fit:cover;
+    }
+     
+    .login {
+        margin: 0 auto;
+        width: 90%;
+    }
+ 
+
+    
+
+    .login p {
+        font-size: 18px;
+    }
+    
+}
