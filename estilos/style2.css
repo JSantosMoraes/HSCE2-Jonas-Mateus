@@ -77,7 +77,7 @@ input{
 }
 .texto{
     width: 40%;
-    font-size: 25px;
+    font-size: 15px;
     padding: 20px;
     border-radius: 15px;
     border: none;
@@ -120,28 +120,11 @@ form button{
     border: none;
     border-radius: 15px;
     margin-bottom: 50px;
-}
-
-@media (max-width:700px) {
-    .question{
-        width: 80%;
-    }
-
-    form button{
-        width: 80%;
-    }
-
-    .texto{
-        width: 80% ;
-
-        
-    }
-
- 
+    font-size: 20px;
 }
 
 .text img{
+    margin-top: 200px;
     width: 300px;
     height: 225px;
 }
-

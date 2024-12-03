@@ -57,8 +57,14 @@ header img {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    height: 100px;
+    height: 80px;
     gap: 30px;
+
+    margin-top: 30px; /* Aumento na área de respiro. */
+}
+
+.logo > h1 {
+    font-size: 2em;
 }
 
 .login >p {
@@ -82,7 +88,7 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 60%;
+    width: 60%;  
     gap: 30px;
 }
 
@@ -96,79 +102,40 @@ form{
 }
 
 form button{
-    color: #fff;
-    background-color: #42B72A;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
+    font-size: 4vh;
+    font-weight: bold;
+    background-color: #36A420;
+    box-shadow: none;
+    padding: 10px;
+    color: white;
+    width: 20vw;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
 
+}
+
+form button:hover {
+    cursor: pointer;
 }
 
 form input{
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 10px;
     border: none;
     outline: 0;
+}
+
+form > div.input > label {
+    font-size: 18px;
+    padding: 10px;
+
+    /* Aumento na área de respiro */
 }
 
 form a{
     color: #fff;
     text-decoration: none;
-}
-
-
-
-@media (max-width:900px) {
-
-    .login{
-        width: 60%;
-        margin-left: 20%;
-        height: 80%;
-        top: calc(10% + 100px);
-        border-radius: 20px;
-    }
-
-    form{
-        width: 90%;
-    }
-}
-
-@media (max-width:700px) {
-
-    .logo{
-        flex-direction: column;
-        gap: 0;
-
-    }
-
-    .logo h1{
-        font-size: 35px;
-    }
-    .logo div{
-        display: none;
-    }
-
-    .logo img{
-        width: 150%;
-        height: 105%;
-        object-fit:cover;
-    }
-     
-    .login {
-        margin: 0 auto;
-        width: 90%;
-    }
- 
-
-    
-
-    .login p {
-        font-size: 18px;
-    }
-    
 }
